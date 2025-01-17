@@ -30,9 +30,9 @@ Setup Instructions:
 1. Run Migrations in Laravel:
 
 First, ensure you have Laravel set up and configured. Then, run the migrations using the following command:
-	php artisan migrate
+- php artisan migrate
 
 2. Set Up the Frontend:
 
 Navigate to the events_portal directory and execute the following command to install dependencies and run the development servers:
-	npm run dev
+- npm run dev
