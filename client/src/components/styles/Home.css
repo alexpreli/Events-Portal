@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');*
+{
+    --home_picture: url('../../assets/events_drawing.png');
+    font-family: 'Roboto', sans-serif;
+}
+.presentationContainer {
+    display: block;
+    margin: 0 auto;
+    background-image: var(--home_picture);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    border-bottom: 3px solid black;
+}
+.blur-overlay {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    min-height: 40vh;
+    -webkit-backdrop-filter: blur(2px) brightness(75%);
+    backdrop-filter: blur(2px) brightness(75%);
+    transition: filter 0.3s ease;
+    z-index: 1;
+}
+.home h1 {
+    position: absolute;
+    z-index: 1;
+    top: 26.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8vh;
+    max-lines: 1;
+    white-space: nowrap;
+    font-weight: bold;
+    background: linear-gradient(80deg, orangered, deepskyblue, mediumorchid, whitesmoke);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #1c1c1c;
+    animation: gradientMove 15s infinite;
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.home h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 2vh auto 2vh auto;
+    background: linear-gradient(60deg, #ff3737, white, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home p {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    font-size: 27px;
+    color: rgba(55, 55, 55, 0.94);
+    left: 10vh;
+    margin: 2px auto 2px auto;
+}
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    width: 90%;
+    top: 56vh;
+    left: 25vh;
+}
+.featuresContainer, .benefitsContainer, .reviewsContainer {
+    width: 90%;
+    margin-bottom: 5vh;
+    margin-top: 0;
+}
+@media(max-width: 1600px) {
+    .home h1 {
+        font-size: 40px;
+        -webkit-text-stroke-width: 1px;
+    }
+    .home h2 {
+        font-size: 25px;
+        left: 20px;
+    }
+    .home p {
+        font-size: 20px;
+        left: 60px;
+    }
+    .content {
+        width: 90%;
+        left: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .home h1 {
+        font-size: 25px;
+        -webkit-text-stroke-width: 1px;
+        top: 30vh;
+    }
+    .home h2 {
+        font-size: 18px;
+    }
+    .home p {
+        font-size: 14px;
+        left: 20px;
+    }
+    .content {
+        width: 90%;
+        left: 10px;
+    }
+}
+@media (max-width: 390px) {
+    .home h1 {
+        font-size: 20px;
+        white-space: initial;
+        max-lines: none;
+        -webkit-text-stroke-width: 1px;
+    }
+    .home h2 {
+        font-size: 18px;
+    }
+    .home p {
+        font-size: 12px;
+        left: 20px;
+    }
+    .content {
+        left: 0;
+    }
+}
+
+
+/* styles for calendar */
+
+.w-full.max-w-4xl.mx-auto.mt-8.px-4 {
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: -60vh;
+}
+
+.p-calendar {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.p-calendar .p-datepicker {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.p-calendar .p-datepicker table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+}
+
+.p-calendar .p-datepicker table td {
+    padding: 0;
+    height: auto;
+}
+
+.p-calendar .p-datepicker table td > span {
+    min-height: 100px;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex.flex-col.items-center {
+    min-height: 100px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.flex.flex-col.items-center .text-lg {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.flex.flex-col.items-center .text-sm {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.calendarSubtitle {
+    left: 25vh;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+@media(max-width: 800px) {
+    .p-calendar {
+        padding: 0.5rem;
+    }
+    
+    .p-calendar .p-datepicker table td > span {
+        min-height: 80px;
+    }
+    
+    .flex.flex-col.items-center {
+        min-height: 80px;
+        padding: 0.25rem;
+        font-size: 0.8rem;
+    }
+    
+    .content {
+        margin-top: 3rem;
+    }
+}

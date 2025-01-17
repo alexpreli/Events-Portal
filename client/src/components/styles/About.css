@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    --bg_desktop: url('../../assets/about_desktop.png');
+    --bg_tablet: url('../../assets/about_tablet.png');
+    --bg_mobile: url('../../assets/about_mobile.png');
+    font-family: 'Roboto', sans-serif;
+}
+.imageContainer {
+    display: block;
+    margin: 0 auto;
+    background-image: var(--bg_desktop);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 85vh;
+    width: 100%;
+    top: 0;
+}
+.about h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: deepskyblue;
+    top: 22vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contentContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    width: 60%;
+    top: 34vh;
+    left: 30vh;
+}
+.description {
+    color: white;
+}
+.about h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+    margin: 10px 0 10px 10%;
+}
+.about p {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    font-size: 18px;
+    color: pink;
+    margin-left: 20%;
+}
+@media screen and (max-width: 1600px) {
+    .about h1 {
+        font-size: 30px;
+    }
+    .about h2 {
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    .about p {
+        margin-left: 15%;
+        font-size: 18px;
+    }
+    .contentContainer {
+        width: 60%;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .imageContainer {
+        background-image: var(--bg_mobile);
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .about h1 {
+        font-size: 20px;
+    }
+    .about h2 {
+        font-size: 18px;
+    }
+    .about p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .imageContainer {
+        background-image: var(--bg_tablet);
+    }
+    .about h1 {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .imageContainer {
+        background-image: var(--bg_desktop);
+    }
+}
+@media (max-height: 500px) and (max-width: 500px) {
+    .about h1 {
+        font-size: 18px;
+        top: 12vh;
+    }
+    .about h2 {
+        font-size: 12px;
+    }
+    .about p {
+        font-size: 8px;
+        font-weight: bold;
+    }
+}@media (max-height: 500px) and (max-width: 1400px) {
+    .about h1 {
+        font-size: 18px;
+        top: 12vh;
+    }
+    .about h2 {
+        font-size: 12px;
+    }
+    .about p {
+        font-size: 8px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,37 @@
+@import './LoginForm.css';
+
+.registerContainer .formContainer {
+    top: 15vh;
+}
+.registerContainer .p-card-content .p-inputtext.p-component {
+    width: 100%;
+}
+.registerContainer .login-container {
+    width: 700px;
+    padding: 0.5rem;
+}
+.registerContainer .formContainer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+}
+.registerContainer .p-inputtext {
+    height: 4vh;
+    width: 80%;
+    padding: 0.75rem !important;
+    margin-bottom: 0;
+    font-size: 1rem;
+    border: 2px solid var(--navbar_color);
+    color: black;
+}
+.registerContainer .p-float-label {
+    margin: 1.8rem 0;
+    width: 100%;
+}
+.registerContainer .p-float-label label {
+    margin-left: 0.5rem;
+}
+.registerContainer .p-button {
+    width: 100%;
+    margin-top: 0;
+    padding: 0.4rem !important;
+}
