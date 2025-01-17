@@ -27,12 +27,28 @@ Technologies Used:
 
 Setup Instructions:
 
-1. Run Migrations in Laravel:
+1. Install Server Dependencies (Laravel):
 
-First, ensure you have Laravel set up and configured. Then, run the migrations using the following command:
+First, navigate to the Laravel backend directory and install the necessary PHP dependencies by running:
+
+- cd Events-Portal/server
+- composer install
+
+After that, run the migrations to set up the database:
+
 - php artisan migrate
 
-2. Set Up the Frontend:
+2. Install Client Dependencies (React):
 
-Navigate to the events_portal directory and execute the following command to install dependencies and run the development servers:
+Navigate to the client directory and install the necessary JavaScript dependencies by running:
+
+- cd Events-Portal/client
+- npm install
+
+3. Run Both Servers:
+
+In the Events-Portal directory, run the following command to start the development servers:
+
 - npm run dev
+
+This will launch both servers: the backend server for the Laravel API and the frontend React development server.
