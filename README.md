@@ -51,4 +51,11 @@ In the Events-Portal directory, run the following command to start the developme
 
 - npm run dev
 
-This will launch both servers: the backend server for the Laravel API and the frontend React development server.
+This will launch both servers: the backend server for the Laravel API on port 8000 and the frontend Vite + React development server on port 5173.
+
+4. Access the Application:
+
+After starting both servers, you can access the application by visiting:
+- http://localhost:5173
+
+This will load the frontend React application, and it will communicate with the Laravel API running on the backend.
