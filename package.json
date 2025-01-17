@@ -1,0 +1,16 @@
+{
+  "name": "events_portal",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "start cmd /k \"cd server && nodemon --exec \"php artisan serve\" -e php,env\" && start cmd /k \"cd client && npm run dev\"",
+    "build": "cd client && vite build",
+    "lint": "cd client && eslint track_pilot",
+    "preview": "cd client && vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
